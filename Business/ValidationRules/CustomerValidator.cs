@@ -12,7 +12,7 @@ namespace Business.ValidationRules
     {
         public CustomerValidator()
         {
-            /*RuleFor(c=>c.Address).NotEmpty().WithMessage("Address cannot be empty");*/
+            
             RuleFor(c=>c.Email).EmailAddress();
             RuleFor(c =>c.Email).NotEmpty().WithMessage("Email cannot be empty");
             RuleFor(c=>c.Name).NotEmpty().WithMessage("Name cannot be empty");

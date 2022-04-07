@@ -68,7 +68,7 @@ namespace WebApi.Controllers
             return BadRequest(result);
 
         }
-        [HttpPatch("validate")]
+        [HttpGet("validate")]
         public IActionResult Validate(Guid id)
         {
             var result = _customerService.Validate(id);
